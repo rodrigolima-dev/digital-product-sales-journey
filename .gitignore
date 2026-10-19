@@ -1,0 +1,16 @@
+.idea/
+.maestri/
+**/node_modules/
+**/vendor/
+**/dist/
+**/coverage/
+**/.angular/
+**/.env
+**/.env.*
+!**/.env.example
+**/storage/logs/
+**/storage/framework/cache/
+*.log
+*.pem
+*.p12
+*.pfx
