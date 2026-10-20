@@ -14,7 +14,7 @@ O repositório atual contém cinco pastas normais, correspondentes às origens a
 
 ## Snapshot e referências Git
 
-O repositório consolidado é um snapshot da working tree local, incluindo suas alterações locais; não é uma combinação dos históricos Git dos submódulos. A origem local foi preservada e esta cópia não foi publicada.
+O repositório consolidado é um snapshot da working tree local, incluindo suas alterações locais; não é uma combinação dos históricos Git dos submódulos. A origem local foi preservada.
 
 - Commit raiz de referência: `7512c4aad7618ef1ad152b80ef60d684de39131e`
 - `academico-php`: `53c0cc7616f193f98a031e03c54ffed5096f4fa4`
@@ -33,4 +33,4 @@ A autoria original e as contribuições existentes devem permanecer atribuídas 
 
 Na verificação de 2026-10-18, a GitHub API retornou `license: null` para o repositório principal e os cinco repositórios de submódulo. Há uma diferença no manifesto local: `mkt-node/package.json` declara `GPL-3.0-or-later`, apesar do metadado `license: null` da API.
 
-A declaração local de `mkt-node` não permite concluir automaticamente a licença do repositório principal ou dos outros quatro repositórios de origem. O metadado da API também não comprova, por si só, todas as permissões aplicáveis. A consolidação em pastas comuns não altera autoria ou permissões. A publicação independente deve aguardar esclarecimento das permissões de uso e redistribuição da base e de suas partes; nenhuma publicação foi feita.
+A declaração local de `mkt-node` não permite concluir automaticamente a licença do repositório principal ou dos outros quatro repositórios de origem. O metadado da API também não comprova, por si só, todas as permissões aplicáveis. A consolidação em pastas comuns não altera autoria ou permissões. Em 2026-10-20, Rodrigo declarou possuir permissão para publicar esta adaptação da base e dos cinco módulos. Essa declaração não substitui uma licença pública da base nem transfere a autoria original.

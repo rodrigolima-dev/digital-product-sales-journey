@@ -37,4 +37,4 @@ Uma spec deve guiar um incremento delimitado, não prometer arquitetura futura c
 
 O teste local de ponta a ponta disponível é `powershell -NoProfile -File .\scripts\smoke.ps1`, com a stack Compose ativa. Usa dados fictícios, deixa registros no MongoDB/Postgres e verifica as respostas HTTP e o JWT; não demonstra entrega de e-mail nem substitui verificação direta da conversão do lead. O padrão `MAILER_DSN=null://null` é um transporte nulo.
 
-Em revisão, não confundir `201` de agendamento com pagamento ou entrega concluídos. Separar resultado observado, resultado reportado e comportamento ainda não exercitado. Toda publicação independente depende de esclarecimento de permissões e da atribuição mantida em [ORIGIN.md](ORIGIN.md).
+Em revisão, não confundir `201` de agendamento com pagamento ou entrega concluídos. Separar resultado observado, resultado reportado e comportamento ainda não exercitado. Rodrigo declarou possuir permissão para esta publicação; manter a atribuição registrada em [ORIGIN.md](ORIGIN.md).

@@ -1,6 +1,6 @@
 # 001 — Jornada de venda de produto digital
 
-**Status:** implementação local validada parcialmente; repositório único consolidado; permissões para publicação ainda pendentes.
+**Status:** implementação local validada parcialmente; repositório único consolidado.
 
 ## Contexto e escopo
 
@@ -37,4 +37,4 @@ O evento, exchange, filas, rotas e payloads acima são os contratos existentes e
 
 ## Marca e procedência
 
-A interface já usa a identidade Rodrigo Lima e uma oferta demonstrativa. Não sugerir vínculo ou endosso da Alura nem inventar preço ou promessa comercial. Manter os créditos à origem, as autorias e as licenças aplicáveis em `docs/ORIGIN.md`, mesmo após converter as cinco pastas para diretórios comuns. Identificar claramente as adaptações de Rodrigo e não apresentar o código de estudo como criação original. A publicação independente depende de esclarecimento das permissões de uso e redistribuição.
+A interface já usa a identidade Rodrigo Lima e uma oferta demonstrativa. Não sugerir vínculo ou endosso da Alura nem inventar preço ou promessa comercial. Manter os créditos à origem, as autorias e as licenças aplicáveis em `docs/ORIGIN.md`, mesmo após converter as cinco pastas para diretórios comuns. Identificar claramente as adaptações de Rodrigo e não apresentar o código de estudo como criação original. A permissão para publicação foi declarada por Rodrigo em 2026-10-20; ver `docs/ORIGIN.md`.

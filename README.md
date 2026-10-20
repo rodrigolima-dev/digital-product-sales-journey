@@ -2,7 +2,7 @@
 
 **Estudo de microserviços em evolução**, adaptado por Rodrigo Lima.
 
-O portfólio adapta um estudo guiado por curso da Alura para apresentar uma jornada de venda de produto digital: checkout com pagamento simulado e entrega de acesso a cursos. A base e as contribuições originais continuam atribuídas às suas autorias; este README não declara todo o código como autoral de Rodrigo. A marca textual é **Rodrigo Lima - Jornada de Venda Digital**. Este repositório único registra um snapshot da working tree local; a origem local foi preservada e esta cópia não foi publicada.
+O portfólio adapta um estudo guiado por curso da Alura para apresentar uma jornada de venda de produto digital: checkout com pagamento simulado e entrega de acesso a cursos. A base e as contribuições originais continuam atribuídas às suas autorias; este README não declara todo o código como autoral de Rodrigo. A marca textual é **Rodrigo Lima - Jornada de Venda Digital**. Este repositório único registra um snapshot da working tree local; a origem local foi preservada.
 
 Veja [procedência e atribuição](docs/ORIGIN.md), [arquitetura](docs/ARCHITECTURE.md), [fluxo de desenvolvimento](docs/DEVELOPMENT.md), [spec 001 — jornada de venda](docs/specs/001-sales-journey.md) e [spec 002 — matrícula no consumer Acadêmico](docs/specs/002-enrollment-use-case.md).
 
@@ -58,7 +58,7 @@ O projeto está consolidado em um único repositório Git com cinco pastas norma
 | `academico-php` | Consumer RabbitMQ e matrícula; persistência RedBean e notificação Symfony. |
 | `academico-php-web` | Login do aluno e acesso aos cursos. |
 
-As origens, SHAs de referência e autorias das cinco pastas estão registradas em [docs/ORIGIN.md](docs/ORIGIN.md). O snapshot não combina os históricos Git dos submódulos. A publicação independente aguarda esclarecimento das permissões de uso e redistribuição.
+As origens, SHAs de referência e autorias das cinco pastas estão registradas em [docs/ORIGIN.md](docs/ORIGIN.md). O snapshot não combina os históricos Git dos submódulos. Rodrigo declarou possuir permissão para publicar esta adaptação em 2026-10-20; veja o registro em [docs/ORIGIN.md](docs/ORIGIN.md).
 
 ## Limites conhecidos
 

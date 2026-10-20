@@ -1,6 +1,6 @@
 # 002 — Caso de uso de matrícula no consumer Acadêmico
 
-**Status:** implementação local validada parcialmente; repositório único consolidado; permissões para publicação ainda pendentes.
+**Status:** implementação local validada parcialmente; repositório único consolidado.
 
 ## Objetivo e contexto
 

@@ -4,7 +4,7 @@
 
 O sistema demonstra uma venda digital com pagamento simulado e entrega de acesso a cursos. A arquitetura descrita é pragmática: três contextos existentes cooperam por contratos HTTP e um evento RabbitMQ, sem serviço novo de pedidos.
 
-O projeto está consolidado em um único repositório Git com cinco pastas normais: `front-end`, `mkt-node`, `financeiro-php`, `academico-php` e `academico-php-web`. O conteúdo é um snapshot da working tree local; a origem local foi preservada, os históricos Git dos submódulos não foram combinados e esta cópia não foi publicada. As referências de procedência estão em [ORIGIN.md](ORIGIN.md).
+O projeto está consolidado em um único repositório Git com cinco pastas normais: `front-end`, `mkt-node`, `financeiro-php`, `academico-php` e `academico-php-web`. O conteúdo é um snapshot da working tree local; a origem local foi preservada, os históricos Git dos submódulos não foram combinados. As referências de procedência estão em [ORIGIN.md](ORIGIN.md).
 
 ## Limites de contexto
 
@@ -57,7 +57,7 @@ No monorepo limpo, o smoke repetido passou localmente em 2026-10-18, após o aju
 
 ## Pendências e limites reais
 
-- Obter esclarecimento de permissões antes de publicação independente; ver [ORIGIN.md](ORIGIN.md).
+- A procedência e a declaração de permissão para publicação estão em [ORIGIN.md](ORIGIN.md).
 - O consumer Acadêmico usa `no_ack: true`; o publicador não marca a mensagem como persistente. Retry, idempotência e recuperação de falhas não estão cobertos por esta arquitetura.
 - O smoke não prova envio de e-mail. A credencial fixa de demonstração e o pagamento simulado não são adequados a produção.
 - A stack conserva versões antigas de Node e PHP; Compose local não implica prontidão operacional para produção.
