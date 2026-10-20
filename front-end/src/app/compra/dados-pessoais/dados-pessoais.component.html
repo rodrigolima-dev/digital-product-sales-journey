@@ -9,5 +9,5 @@
         <input matInput formControlName="email" type="email">
     </mat-form-field>
 
-    <button mat-raised-button (click)="nextStep()">Next</button>
+    <button mat-raised-button type="button" [disabled]="formGroup.invalid" (click)="nextStep()">Continuar</button>
 </form>

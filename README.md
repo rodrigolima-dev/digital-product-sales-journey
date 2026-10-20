@@ -1,8 +1,8 @@
-# Rodrigo Lima - Jornada de Venda Digital
+# Digital Product Sales Journey
 
-**Estudo de microserviços em evolução**, adaptado por Rodrigo Lima.
+**Estudo de microserviços em evolução.**
 
-O portfólio adapta um estudo guiado por curso da Alura para apresentar uma jornada de venda de produto digital: checkout com pagamento simulado e entrega de acesso a cursos. A base e as contribuições originais continuam atribuídas às suas autorias; este README não declara todo o código como autoral de Rodrigo. A marca textual é **Rodrigo Lima - Jornada de Venda Digital**. Este repositório único registra um snapshot da working tree local; a origem local foi preservada.
+O projeto adapta um estudo guiado por curso da Alura para apresentar uma jornada de venda de produto digital: checkout com pagamento simulado e entrega de acesso a cursos. A base e as contribuições originais continuam atribuídas às suas autorias em `docs/ORIGIN.md`. A marca textual é **Digital Product Sales Journey**. Este repositório único registra um snapshot da working tree local; a origem local foi preservada.
 
 Veja [procedência e atribuição](docs/ORIGIN.md), [arquitetura](docs/ARCHITECTURE.md), [fluxo de desenvolvimento](docs/DEVELOPMENT.md), [spec 001 — jornada de venda](docs/specs/001-sales-journey.md) e [spec 002 — matrícula no consumer Acadêmico](docs/specs/002-enrollment-use-case.md).
 
@@ -32,7 +32,7 @@ Na raiz do repositório, com Docker Compose disponível e as portas necessárias
 docker compose up --build
 ```
 
-O Compose raiz sobe front-end, Marketing, Financeiro, RabbitMQ, gateway Nginx e serviços Acadêmicos com Postgres. O gateway local é exposto na porta 80. Para encerrar a stack, use `Ctrl+C` no terminal do Compose.
+O Compose raiz sobe front-end, Marketing, Financeiro, RabbitMQ, gateway Nginx e serviços Acadêmicos com Postgres. A interface fica em `http://127.0.0.1:4200` e o gateway em `http://127.0.0.1:80`; todas as portas publicadas ficam limitadas à interface local. Para encerrar a stack, use `Ctrl+C` no terminal do Compose.
 
 O Compose declara volumes nomeados para MongoDB, RabbitMQ e Postgres. Como o pool de endereços padrão se esgotou nesta máquina, a rede `default` usa `JORNADA_DOCKER_SUBNET`, com padrão `10.254.240.0/24`. Essa faixa foi validada aqui; em outra máquina, pode ser necessário escolher uma sub-rede diferente que não conflite com as redes locais. A stack antiga foi somente parada com `docker compose stop`; seus containers e dados permanecem. Os dados antigos não foram migrados para os novos volumes nomeados.
 
@@ -62,7 +62,10 @@ As origens, SHAs de referência e autorias das cinco pastas estão registradas e
 
 ## Limites conhecidos
 
+- Uso restrito a demonstração local com dados fictícios. A API de Marketing lista leads sem autenticação; o Acadêmico usa chave JWT e senha de matrícula fixas, e o token não expira. Não publicar a stack em uma rede acessível por terceiros.
+- Não há confirmação de pagamento real. O formulário solicita campos de cartão apenas para simular o fluxo; nunca informe cartão, CPF ou e-mail reais.
 - O consumer Acadêmico usa `no_ack: true`: não há confirmação manual de processamento nem retry controlado pelo consumer.
 - O publicador cria `AMQPMessage` sem marcar `delivery_mode` persistente; exchange/fila duráveis não tornam a mensagem persistente.
+- Não há idempotência na matrícula; reenvios podem criar alunos duplicados. O progresso dos cursos é armazenado na linha do curso e pode afetar outros alunos.
 - A stack conserva versões antigas herdadas do estudo, incluindo imagens Node 16 e PHP 8.0. É uma demonstração local, sem alegação de prontidão para produção.
 - O smoke cobre criação do lead, agendamento do pagamento e eventual login do aluno; não substitui verificação independente do estado convertido no Marketing, entrega de e-mail ou resiliência de mensageria.

@@ -1,15 +1,8 @@
 services:
   front:
-    image: node:16
-    volumes:
-      - ./front-end:/app
-      - type: bind
-        source: ./front-end.sh
-        target: /app/entrypoint.sh
-    working_dir: /app
-    command: sh ./entrypoint.sh
+    build: ./front-end
     ports: 
-      - 4200:4200
+      - "127.0.0.1:4200:4200"
     environment:
       API_URL: "http://web-mkt:3000"
 
@@ -30,7 +23,7 @@ services:
       RABBITMQ_USERNAME: guest
       RABBITMQ_PASSWORD: guest
     ports:
-      - 3000:3000
+      - "127.0.0.1:3000:3000"
     depends_on:
       - rabbitmq
       - mongo-mkt
@@ -50,13 +43,13 @@ services:
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
     ports:
-      - 5672:5672
+      - "127.0.0.1:5672:5672"
 
   web-financeiro:
     build: ./financeiro-php
     command: sh ./entrypoint.sh
     ports:
-      - 9501:9501
+      - "127.0.0.1:9501:9501"
     volumes:
       - ./financeiro-php:/app
       - type: bind
@@ -72,7 +65,7 @@ services:
       - ./servicos-nginx:/etc/nginx/conf.d
     restart: always
     ports:
-      - 80:80
+      - "127.0.0.1:80:80"
     depends_on:
       - web-academico
       - web-financeiro
@@ -131,7 +124,7 @@ services:
     working_dir: /app
     command: sh ./entrypoint.sh
     ports:
-      - 8080:8080
+      - "127.0.0.1:8080:8080"
     depends_on:
       - postgre-academico
 

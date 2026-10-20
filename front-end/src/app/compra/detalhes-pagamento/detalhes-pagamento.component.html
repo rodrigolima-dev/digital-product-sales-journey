@@ -1,4 +1,5 @@
 <form [formGroup]="formGroup">
+    <p role="note">Demonstração local: use somente CPF e dados de cartão fictícios. Nenhum pagamento real será feito.</p>
     <mat-form-field appearance="fill">
         <mat-label>CPF (Apenas números)</mat-label>
         <input matInput formControlName="cpf" type="text" inputmode="numeric" pattern="[0-9]{11}" title="11122233344">
@@ -24,5 +25,5 @@
         <input matInput formControlName="cvv" type="text" inputmode="numeric" pattern="[0-9]{3,4}">
     </mat-form-field>
 
-    <button mat-raised-button (click)="nextStep()">Next</button>
+    <button mat-raised-button type="button" [disabled]="formGroup.invalid" (click)="nextStep()">Continuar</button>
 </form>

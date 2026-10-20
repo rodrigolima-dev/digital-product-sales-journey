@@ -1,4 +1,4 @@
-# Arquitetura — Rodrigo Lima - Jornada de Venda Digital
+# Arquitetura — Digital Product Sales Journey
 
 ## Escopo e estado
 

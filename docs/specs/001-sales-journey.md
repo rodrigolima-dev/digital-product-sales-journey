@@ -6,7 +6,7 @@
 
 Adaptar o fluxo de checkout de cursos já existente para demonstrar a venda de um produto digital, com pagamento simulado e entrega de acesso. A matrícula/acesso é a entrega do produto. Esta especificação não introduz catálogo novo, produto físico, estoque, frete, provedor de pagamento real, novos serviços, endpoints ou eventos.
 
-A marca textual é **Rodrigo Lima - Jornada de Venda Digital**. A organização atual reúne `front-end`, `mkt-node`, `financeiro-php`, `academico-php` e `academico-php-web` como cinco pastas normais em um único repositório. O conteúdo consolidado é um snapshot da working tree local; veja a procedência e os SHAs em `docs/ORIGIN.md`.
+A marca textual é **Digital Product Sales Journey**. A organização atual reúne `front-end`, `mkt-node`, `financeiro-php`, `academico-php` e `academico-php-web` como cinco pastas normais em um único repositório. O conteúdo consolidado é um snapshot da working tree local; veja a procedência e os SHAs em `docs/ORIGIN.md`.
 
 ## Limites de domínio atuais
 
@@ -37,4 +37,4 @@ O evento, exchange, filas, rotas e payloads acima são os contratos existentes e
 
 ## Marca e procedência
 
-A interface já usa a identidade Rodrigo Lima e uma oferta demonstrativa. Não sugerir vínculo ou endosso da Alura nem inventar preço ou promessa comercial. Manter os créditos à origem, as autorias e as licenças aplicáveis em `docs/ORIGIN.md`, mesmo após converter as cinco pastas para diretórios comuns. Identificar claramente as adaptações de Rodrigo e não apresentar o código de estudo como criação original. A permissão para publicação foi declarada por Rodrigo em 2026-10-20; ver `docs/ORIGIN.md`.
+A interface usa a identidade Digital Product Sales Journey e uma oferta demonstrativa. Não sugerir vínculo ou endosso da Alura nem inventar preço ou promessa comercial. Manter os créditos à origem, as autorias e as licenças aplicáveis em `docs/ORIGIN.md`, mesmo após converter as cinco pastas para diretórios comuns. Identificar claramente as adaptações de Rodrigo e não apresentar o código de estudo como criação original. A permissão para publicação foi declarada por Rodrigo em 2026-10-20; ver `docs/ORIGIN.md`.

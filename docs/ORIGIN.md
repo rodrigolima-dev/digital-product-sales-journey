@@ -1,8 +1,8 @@
-# Rodrigo Lima - Jornada de Venda Digital: procedência e atribuição
+# Digital Product Sales Journey: procedência e atribuição
 
 ## Base do projeto
 
-O portfólio **Rodrigo Lima - Jornada de Venda Digital** parte do repositório [`CViniciusSDias/alura-ms`](https://github.com/CViniciusSDias/alura-ms), um estudo guiado por curso da Alura. A origem pedagógica contextualiza o projeto; não transfere autoria do código a Rodrigo Lima.
+O projeto **Digital Product Sales Journey** parte do repositório [`CViniciusSDias/alura-ms`](https://github.com/CViniciusSDias/alura-ms), um estudo guiado por curso da Alura. A origem pedagógica contextualiza o projeto; não transfere autoria do código a Rodrigo Lima.
 
 O repositório atual contém cinco pastas normais, correspondentes às origens abaixo, que estavam registradas como submódulos na base:
 
@@ -27,7 +27,7 @@ Os SHAs identificam as revisões de origem; arquivos da working tree podem conte
 
 ## Autoria e contribuição
 
-A autoria original e as contribuições existentes devem permanecer atribuídas às respectivas pessoas; este portfólio não declara todo o código como autoral de Rodrigo Lima. O trabalho de Rodrigo é uma adaptação arquitetural do projeto, incluindo evolução de contratos e testes, ajustes de Docker Compose e consolidação planejada em um repositório único. A identidade textual escolhida é **Rodrigo Lima - Jornada de Venda Digital**; isso não substitui a atribuição da base original nem sugere endosso da Alura.
+A autoria original e as contribuições existentes devem permanecer atribuídas às respectivas pessoas; este projeto não declara todo o código como autoral de Rodrigo Lima. O trabalho de Rodrigo é uma adaptação arquitetural do projeto, incluindo evolução de contratos e testes, ajustes de Docker Compose e consolidação planejada em um repositório único. A identidade textual escolhida é **Digital Product Sales Journey**; isso não substitui a atribuição da base original nem sugere endosso da Alura.
 
 ## Registro de licença e publicação
 
